@@ -1,0 +1,146 @@
+/* src/components/Routes/Forms/Preservation/Preservation.css */
+
+.preservation-containers {
+    height: 80vh;
+    overflow-y: auto;
+}
+
+.preservation-section {
+    width: 80vw;
+    margin: auto;
+}
+
+.container-preservation {
+    margin-top: 2rem;
+}
+
+.pres-headi {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #000;
+    padding-bottom: 0.5rem;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Spread content to edges */
+    align-items: center; /* Align items vertically */
+}
+
+
+.edit-button {
+    padding: 0.25rem 0.5rem ;
+    background-color: #ccc; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.75rem;
+}
+
+.edit-button:hover {
+    background-color: adadad; /* Darker shade on hover */
+}
+
+.pres-form {
+    width: 100%;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column; /* Changed to column for better alignment */
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row; /* Align labels and inputs in a row */
+    align-items: center; /* Vertically center align labels and inputs */
+    margin-left: 1rem;
+    margin-bottom: 0.25rem; /* Space between rows */
+}
+
+.form-group label {
+    width: 25%; 
+    margin-right: 0.5rem; 
+    font-weight: 500; 
+    text-align: left;
+    font-size: 0.85rem;
+
+}
+
+input[type="email"],
+input[type="text"] {
+    width: 30%;
+    padding: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.75rem;
+}
+
+input:disabled {
+    background-color: #f9f9f9; /* Light background for disabled inputs */
+    cursor: not-allowed; /* Change cursor to indicate non-editable */
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 0;
+}
+
+.action-buttons button {
+    padding: 0.25rem 0.5rem ;
+    background-color: #ccc; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.action-buttons button:first-child {
+    background-color: #ccc; 
+    margin-right: 3rem;
+}
+
+.action-buttons button:first-child:hover {
+    background-color: #adadad; 
+    color: white;
+}
+
+.action-buttons button:last-child {
+    background-color: #ccc; 
+}
+
+.action-buttons button:last-child:hover {
+    background-color: #adadad; 
+    color: white;
+}
+
+.pres-subheadi{
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.checkbox-text{
+    font-size: 0.75rem;
+    margin-left: 1rem;
+}
+
+.sbut-btn{
+    padding: 0.5rem; /* Equivalent to px-4 py-2 */
+    font-size: 0.8rem; /* Equivalent to text-sm */
+    font-weight: 500; /* Equivalent to font-medium */
+    background-color: #34d399; /* Equivalent to bg-emerald-600 */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 0.45rem; /* Equivalent to rounded-md */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background */
+}
+
+.sbut-btn:hover {
+    background-color: #059669; /* Equivalent to hover:bg-emerald-700 */
+}

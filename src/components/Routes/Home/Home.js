@@ -1,10 +1,29 @@
 // src/components/Routes/Home/Home.js
 
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import Header from "../Other/Header";
 
 const Home = () => {
+
+    const navigate = useNavigate(); // Initialize useNavigate
+
+    // Function to handle navigation to preservation
+    const handlePreserveClick = () => {
+        navigate('/preservation-request');
+    };
+
+    // Function to handle navigation to data
+    const handleDataClick = () => {
+        navigate('/data-request');
+    };
+
+    // Function to handle navigation to emergency
+    const handleEmergencyClick = () => {
+        navigate('/emergency-request');
+    };
+
     return(
         <div>
             <Header />
@@ -31,7 +50,7 @@ const Home = () => {
                         </div>
 
                         <div className="block-btn">
-                            <button className="block-button blue-bt">Submit Request </button>
+                            <button className="block-button blue-bt" onClick={handlePreserveClick}>Submit Request </button>
                         </div>
                     </div>
 
@@ -52,7 +71,7 @@ const Home = () => {
                         </div>
 
                         <div className="block-btn">
-                            <button className="block-button green-bt">Submit Request </button>
+                            <button className="block-button green-bt" onClick={handleDataClick}>Submit Request </button>
                         </div>
                     </div>
 
@@ -73,7 +92,7 @@ const Home = () => {
                         </div>
 
                         <div className="block-btn">
-                            <button className="block-button red-bt">Submit Request </button>
+                            <button className="block-button red-bt" onClick={handleEmergencyClick}>Submit Request </button>
                         </div>
                     </div>
                 </div>
