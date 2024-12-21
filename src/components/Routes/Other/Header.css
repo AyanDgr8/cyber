@@ -1,0 +1,75 @@
+/* src/components/Routes/Other/Header/Header.css */
+
+.header-container {
+    background: linear-gradient(to bottom, #f9fafb, #f3f4f6); /* Gradient from gray-50 to gray-100 */
+    min-height: 10vh;
+}
+
+.header {
+    background-color: white; 
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.header-content {
+    max-width: 1280px; /* Equivalent to max-w-7xl */
+    margin: auto; /* Center the header */
+    padding: 1rem 1rem; /* Equivalent to px-4 py-4 */
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between logo and buttons */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Center logo vertically */
+
+}
+
+.logo-icon {
+    height: 2rem; /* Equivalent to h-8 */
+    width: 2rem; /* Equivalent to w-8 */
+    color: #34d399; /* Equivalent to text-emerald-600 */
+}
+
+.title {
+    margin-left: 0.5rem; /* Equivalent to ml-2 */
+    font-size: 1.25rem; /* Equivalent to text-xl */
+    font-weight: bold; /* Equivalent to font-bold */
+    color: #1f2937; /* Equivalent to text-gray-900 */
+}
+
+.button-container {
+    display: flex;
+    gap: 1rem; /* Space between buttons */
+}
+
+.help-button {
+    padding: 0.5rem 1rem; /* Equivalent to px-4 py-2 */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    font-weight: 500; /* Equivalent to font-medium */
+    color: #4b5563; /* Equivalent to text-gray-700 */
+    background: transparent; /* No background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: color 0.2s; /* Smooth transition for color */
+}
+
+.help-button:hover {
+    color: #1f2937; /* Equivalent to hover:text-gray-900 */
+}
+
+.download-button {
+    padding: 0.5rem 1rem; /* Equivalent to px-4 py-2 */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    font-weight: 500; /* Equivalent to font-medium */
+    background-color: #34d399; /* Equivalent to bg-emerald-600 */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 0.375rem; /* Equivalent to rounded-md */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.2s; /* Smooth transition for background */
+}
+
+.download-button:hover {
+    background-color: #059669; /* Equivalent to hover:bg-emerald-700 */
+}

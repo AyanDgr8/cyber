@@ -1,0 +1,229 @@
+/* src/components/Routes/Login/Login.css */
+
+.login-container {
+    /* min-height: 90vh; Full height of the viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1; /* Allow the main content to grow */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    padding: 20px; /* Add some padding */
+    align-items: start;
+}
+
+.request-card {
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); /* Shadow effect */
+    overflow: hidden; /* Prevent overflow */
+    width: 75%;
+    align-items: left;
+}
+
+.request-header {
+    background-color: #d1fae5; /* Equivalent to bg-emerald-50 */
+    padding: 2rem 1.5rem; /* Padding for header */
+    border-bottom: 1px solid #bbf7d0; /* Border at the bottom */
+}
+
+.request-title {
+    font-size: 1.875rem; /* Equivalent to text-3xl */
+    font-weight: bold; /* Equivalent to font-bold */
+    color: #1f2937; /* Equivalent to text-gray-900 */
+    text-align: center; /* Center the title */
+}
+
+.request-body {
+    padding: 2rem 1.5rem; /* Padding for body */
+    text-align: left; 
+
+}
+
+.request-info {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 1.5rem; /* Space between elements */
+}
+
+.request-subtitle {
+    font-size: 1.25rem;/* Equivalent to text-xl */
+    font-weight: 600; /* Equivalent to font-semibold */
+    color: #1f2937; /* Equivalent to text-gray-900 */
+}
+
+.request-description {
+    color: #4b5563; /* Equivalent to text-gray-600 */
+}
+
+.description-text {
+    margin-bottom: 1rem; /* Space below the paragraph */
+}
+
+.checkbox-container {
+    display: flex; /* Flexbox for checkbox and label */
+    align-items: start; /* Align items at the start */
+}
+
+.checkbox-input {
+    height: 1rem; /* Equivalent to h-4 */
+    width: 1rem; /* Equivalent to w-4 */
+    color: #34d399; /* Equivalent to text-emerald-600 */
+    border-radius: 0.25rem; /* Equivalent to rounded */
+}
+
+.checkbox-label {
+    margin-left: 0.75rem; /* Space between checkbox and label */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    color: #4b5563; /* Equivalent to text-gray-600 */
+}
+
+.request-button {
+    width: auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1.5rem; /* Equivalent to px-6 py-2 */
+    border: none; /* No border */
+    border-radius: 0.375rem; /* Equivalent to rounded-md */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    font-weight: 500; /* Equivalent to font-medium */
+    color: white; /* Text color */
+    background-color: #34d399; /* Equivalent to bg-emerald-600 */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.2s; /* Smooth transition for hover effect */
+}
+
+.request-button:disabled {
+    opacity: 0.5; /* Dim the button when disabled */
+    cursor: not-allowed; /* Not allowed cursor */
+}
+.request-button:hover {
+    background-color: #059669; /* Equivalent to hover:bg-emerald-700 */
+}
+
+.lock-icon {
+    height: 1rem; /* Equivalent to h-4 */
+    width: 1rem; /* Equivalent to w-4 */
+    margin-right: 0.5rem; /* Space between icon and text */
+}
+
+.warning-text {
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    color: #6b7280; /* Equivalent to text-gray-500 */
+}
+
+/* Email Dialog Styles */
+.email-dialog {
+    position: fixed; /* Fixed position for the dialog */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.dialog-content {
+    background-color: white; /* White background for the dialog */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    width: 100%; /* Full width */
+    max-width: 400px; /* Max width for the dialog */
+    padding: 1.5rem; /* Padding inside the dialog */
+}
+
+.request-subtitlee {
+    font-size: 1.25rem;/* Equivalent to text-xl */
+    font-weight: 600; /* Equivalent to font-semibold */
+    color: #1f2937; /* Equivalent to text-gray-900 */
+    text-align: center;
+}
+
+.dialog-header {
+    display: flex; /* Flexbox for header */
+    justify-content: space-between; /* Space between title and close button */
+    align-items: center; /* Center items vertically */
+}
+
+.dialog-body {
+    margin-top: 1rem; /* Space above the body */
+}
+
+.email-input {
+    width: 100%; /* Full width */
+    padding: 0.5rem; /* Padding inside the input */
+    border: 1px solid #d1d5db; /* Border color */
+    border-radius: 0.375rem; /* Rounded corners */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Inner shadow */
+    transition: border-color 0.2s; /* Smooth transition for border color */
+}
+
+.email-input:focus {
+    outline: none; /* Remove default outline */
+    border-color: #34d399; /* Change border color on focus */
+    box-shadow: 0 0 0 1px rgba(52, 211, 153, 0.5); /* Focus shadow */
+}
+
+.email-description {
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    color: #6b7280; /* Equivalent to text-gray-500 */
+    margin-top: 0.5rem; /* Space above the description */
+}
+
+.dialog-footer {
+    margin-top: 1rem; /* Space above the footer */
+    display: flex; /* Flexbox for footer */
+    justify-content: flex-end; /* Align buttons to the right */
+}
+
+.submit-button {
+    padding: 0.5rem 1rem; /* Padding for the button */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    font-weight: 500; /* Medium font weight */
+    color: white; /* Text color */
+    background-color: #34d399; /* Background color */
+    border: none; /* No border */
+    border-radius: 0.375rem; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.2s; /* Smooth transition for hover effect */
+}
+
+.submit-button:disabled {
+    opacity: 0.5; /* Dim the button when disabled */
+    cursor: not-allowed; /* Not allowed cursor */
+}
+
+.close-button {
+    background: none; /* No background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.close-icon {
+    height: 1rem; /* Equivalent to h-4 */
+    width: 1rem; /* Equivalent to w-4 */
+}
+
+/* Notification Styles */
+.notification {
+    position: fixed; /* Fixed position for notification */
+    top: 20px; /* Space from the top */
+    right: 20px; /* Space from the right */
+    background-color: #fef9c3; /* Background color for success */
+    color: #4a4a4a; /* Text color */
+    padding: 1rem; /* Padding inside the notification */
+    border-radius: 0.375rem; /* Rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.notification.success {
+    background-color: #d1fae5; /* Background color for success */
+    color: #065f46; /* Text color for success */
+}

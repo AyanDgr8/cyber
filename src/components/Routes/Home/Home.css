@@ -1,1 +1,107 @@
-/*  src/components/Routes/Home/Home.css */
+/* src/components/Routes/Home/Home.css */
+
+.home-title {
+    background-color: #d1fae5; 
+    padding: 1rem; 
+    margin: auto;
+}
+
+.home-head-1 {
+    font-size: 1.875rem; /* Equivalent to text-3xl */
+    font-weight: bold; /* Equivalent to font-bold */
+    color: #1f2937; /* Equivalent to text-gray-900 */
+    text-align: center; 
+}
+
+.home-head-2 {
+    font-size: 1rem; 
+    color: rgb(35, 35, 35); 
+    text-align: center; 
+}
+
+.three-blocks {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.home-block {
+    text-align: left;
+    margin: auto;
+    border-radius: 10px; /* Rounded corners */
+    padding: 1rem; /* Padding inside the block */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow around the block */
+    width: 30%; /* Width of the block */
+    background-color: white; /* Background color for the block */
+}
+
+.logo-headi {
+    display: flex;
+}
+
+.home-logos {
+    height: 2rem;
+    width: 2rem;
+}
+
+.block-title {
+    font-size: 1.25rem;
+    font-weight: 600; 
+    color: #1f2937; 
+    text-align: center; 
+    margin-left: 0.5rem;
+}
+
+.block-subtitle {
+    font-size: 1rem;
+    color: #1f2937; 
+    text-align: left; 
+    margin: 0.5rem;
+}
+
+.block-btn {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.block-button {
+    width: auto; /* Auto width for the button */
+    padding: 0.25rem 1rem; /* Padding for the button */
+    border-radius: 0.25rem; 
+    border: none; /* No border */
+    cursor: pointer;
+    background-color: white; /* Default background color */
+    font-size: 0.8rem; /* Font size */
+    text-align: center; /* Center text inside the button */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow around the button */
+}
+
+.blue-bt {
+    color: white; /* Text color for blue button */
+    background-color: #3C6DD9; /* Background color for blue button */
+}
+
+.blue-bt:hover {
+    background-color: #3B8CF6; /* Hover background color for blue button */
+}
+
+.green-bt {
+    color: white; /* Text color for green button */
+    background-color: #77E17E; /* Background color for green button */
+}
+
+.green-bt:hover {
+    background-color: #7FF57F; /* Hover background color for green button */
+}
+
+.red-bt {
+    color: white; /* Text color for red button */
+    background-color: #ef4444; /* Background color for red button */
+}
+
+.red-bt:hover {
+    background-color: #FF4043; /* Hover background color for red button */
+}
